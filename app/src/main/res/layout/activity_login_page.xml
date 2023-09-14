@@ -40,22 +40,23 @@
         android:id="@+id/imageView"
         android:layout_width="142dp"
         android:layout_height="145dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="88dp"
         app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sub_hello_login"
-        app:srcCompat="@drawable/ic_person"
-        tools:layout_editor_absoluteX="114dp" />
+        app:srcCompat="@drawable/ic_person" />
 
     <EditText
         android:id="@+id/email_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="112dp"
         android:hint="Your Email"
         android:inputType="textEmailAddress"
         android:textColorHint="@color/light_grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
