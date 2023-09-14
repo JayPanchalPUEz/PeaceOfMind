@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835138389853",
+    "project_id": "peaceofmind-1e8fb",
+    "storage_bucket": "peaceofmind-1e8fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835138389853:android:c54808167a21a1d3cb4ab4",
+        "android_client_info": {
+          "package_name": "com.example.peaceofmind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpEYNiosh3NjWrAHOwkdZbnPGQfBEj7Vw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
