@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
-    android:background="@drawable/register_background"
     android:layout_gravity="center"
+    android:background="@drawable/register_background"
+    android:padding="20dp"
     tools:context=".RegisterPage">
 
     <TextView
@@ -77,10 +77,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Already have an account? Please Login"
-        android:textSize="15sp"
-        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

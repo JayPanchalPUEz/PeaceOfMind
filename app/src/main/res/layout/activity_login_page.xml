@@ -80,6 +80,7 @@
         android:layout_marginTop="276dp"
         android:text="LOGIN"
         android:textColor="@color/light_blue"
+        android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="@+id/dont_have_acc_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
