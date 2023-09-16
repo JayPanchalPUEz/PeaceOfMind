@@ -17,6 +17,7 @@ class LoginPage : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var sharedPreferences: SharedPreferences
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,24 +26,23 @@ class LoginPage : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
 
-        if(sharedPreferences.getBoolean("isLoggedIn", false)){
+        if (sharedPreferences.getBoolean("isLoggedIn", false)) {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
 
-        val loginButton =findViewById<Button>(R.id.btn_login)
+        val loginButton = findViewById<Button>(R.id.btn_login)
         loginButton.setOnClickListener {
             val email = findViewById<EditText>(R.id.email_login).text.toString()
             val password = findViewById<EditText>(R.id.password_login).text.toString()
 
-            if(email.isNullOrEmpty() || password.isNullOrEmpty()){
+            if (email.isNullOrEmpty() || password.isNullOrEmpty()) {
                 Toast.makeText(this, "Please enter your credentials", Toast.LENGTH_SHORT).show()
-            }
-            else{
+            } else {
                 auth.signInWithEmailAndPassword(email, password)
-                    .addOnCompleteListener(this) {task->
-                        if(task.isSuccessful) {
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
                             Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show()
 
                             val editor = sharedPreferences.edit()
@@ -52,10 +52,12 @@ class LoginPage : AppCompatActivity() {
                             val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)
                             finish()
-                        }
-
-                        else{
-                            Toast.makeText(this, "Login failed!! Check your credentials.", Toast.LENGTH_SHORT).show()
+                        } else {
+                            Toast.makeText(
+                                this,
+                                "Login failed!! Check your credentials.",
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
                     }
             }
