@@ -23,14 +23,19 @@ class LoginPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_page)
 
+
+
         auth = FirebaseAuth.getInstance()
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+
 
         if (sharedPreferences.getBoolean("isLoggedIn", false)) {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
+
+
 
         val loginButton = findViewById<Button>(R.id.btn_login)
         loginButton.setOnClickListener {
@@ -49,7 +54,10 @@ class LoginPage : AppCompatActivity() {
                             editor.putBoolean("isLoggedIn", true)
                             editor.apply()
 
+                            val loginName = sharedPreferences.getString("user_name", "")
+//                            loginName = intent.getStringExtra("UserName")
                             val intent = Intent(this, MainActivity::class.java)
+                            intent.putExtra("user_name", loginName)
                             startActivity(intent)
                             finish()
                         } else {
@@ -66,6 +74,7 @@ class LoginPage : AppCompatActivity() {
         val loginLink = findViewById<TextView>(R.id.dont_have_acc_login)
         loginLink.setOnClickListener {
             val intent = Intent(this, RegisterPage::class.java)
+
             startActivity(intent)
         }
 

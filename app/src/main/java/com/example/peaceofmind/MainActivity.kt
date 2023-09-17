@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        var userName = sharedPreferences.getString("user_name", "")
+        val intent = intent
+        intent.putExtra("UserName", userName)
+
 
         val navView: BottomNavigationView = findViewById(R.id.bottom_nav)
 
