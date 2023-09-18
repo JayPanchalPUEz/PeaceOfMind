@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.TextView
 import com.example.peaceofmind.R
-class HomeFragment : Fragment() {
+open class HomeFragment : Fragment() {
 
     private lateinit var username:TextView
     private lateinit var sharedPreferences: SharedPreferences
@@ -21,7 +21,8 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val nameReg = activity?.intent?.getStringExtra("UserName")
+        sharedPreferences = requireActivity().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        val nameReg = sharedPreferences.getString("username", "")
 
         username = view.findViewById(R.id.username_home)
 

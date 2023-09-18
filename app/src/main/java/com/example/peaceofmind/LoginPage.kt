@@ -54,10 +54,10 @@ class LoginPage : AppCompatActivity() {
                             editor.putBoolean("isLoggedIn", true)
                             editor.apply()
 
-                            val loginName = sharedPreferences.getString("user_name", "")
+//                            val loginName = sharedPreferences.getString("user_name", "")
 //                            loginName = intent.getStringExtra("UserName")
                             val intent = Intent(this, MainActivity::class.java)
-                            intent.putExtra("user_name", loginName)
+//                            intent.putExtra("user_name", loginName)
                             startActivity(intent)
                             finish()
                         } else {

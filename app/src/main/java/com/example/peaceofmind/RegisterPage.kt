@@ -23,30 +23,29 @@ class RegisterPage : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
 
-        if (sharedPreferences.getBoolean("isLoggedIn", false)) {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+//        if (sharedPreferences.getBoolean("isLoggedIn", false)) {
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
 
         val registerButton = findViewById<Button>(R.id.btn_register)
-        var nameRegistered = findViewById<EditText>(R.id.name_register).text.toString()
+
 
 
         registerButton.setOnClickListener {
             val email = findViewById<EditText>(R.id.email_register).text.toString()
             val password = findViewById<EditText>(R.id.password_register).text.toString()
-
+            var nameRegistered = findViewById<EditText>(R.id.name_register).text.toString()
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this){task->
                     if(task.isSuccessful){
                         Toast.makeText(this, "Registration Successful!", Toast.LENGTH_SHORT).show()
-                        val username = nameRegistered
                         val editor = sharedPreferences.edit()
-                        editor.putString("user_name", nameRegistered)
+                        editor.putString("username", nameRegistered)
                         editor.apply()
                         val intent = Intent(this, LoginPage::class.java)
-//                        intent.putExtra("UserName", username)
+//
                         startActivity(intent)
                         finish()
                     }
