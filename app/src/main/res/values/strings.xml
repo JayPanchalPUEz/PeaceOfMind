@@ -4,4 +4,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     
     <string name="firstString">Discover Inner Peace and Serenity with this app</string>
+
+    <string name="secondString">Welcome to Peace Of Mind, your gateway to finding inner peace,
+        tranquility, and a calmer mind.\n
+        In today\'s fast-paced world, stress and anxiety have become prevalent.\n
+        Our app is designed to help you achieve peace of mind through the practice of meditation and mindfulness.\n
+        So thank you for downloading this app.</string>
+
+    <string name="ButtonStringForMeditateFragment">\nTap the following button to go Meditate Tab, so that you can get started Directly\n</string>
+
+    <string name="thirdString">So first of all, \nWhat is Peace of Mind?</string>
 </resources>

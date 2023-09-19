@@ -1,5 +1,6 @@
 package com.example.peaceofmind.Fragments
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -7,13 +8,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.peaceofmind.R
 open class HomeFragment : Fragment() {
 
     private lateinit var username:TextView
     private lateinit var sharedPreferences: SharedPreferences
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -29,6 +32,7 @@ open class HomeFragment : Fragment() {
 
         username.text = nameReg
 
+        
 
         return view
     }

@@ -7,6 +7,7 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.example.peaceofmind.Fragments.HomeFragment
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val topBar:Toolbar = findViewById(R.id.mainActivityTopbar)
+        setSupportActionBar(topBar)
 
         auth = FirebaseAuth.getInstance()
 //        sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
@@ -55,6 +59,8 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+
 
 
     }
