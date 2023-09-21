@@ -1,14 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.MeditateFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Meditate Fragment" />
+        android:paddingHorizontal="10dp">
 
-</FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:fontFamily="@font/advent_pro_bold"
+                android:textAlignment="center"
+                android:text="“Quiet the mind and the soul will speak.”"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="– Ma Jaya Sati Bhagavati"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:textAlignment="viewEnd"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="So let's get started:"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/advent_pro_light"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can click below picture to go to the website"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:fontFamily="@font/advent_pro"/>
+
+            <ImageView
+                android:id="@+id/ImageLink"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/meditate_tab" />
+
+            <Button
+                android:id="@+id/YoutubeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Youtube"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
