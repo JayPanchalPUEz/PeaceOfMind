@@ -11,7 +11,12 @@
         Our app is designed to help you achieve peace of mind through the practice of meditation and mindfulness.\n
         So thank you for downloading this app.</string>
 
-    <string name="ButtonStringForMeditateFragment">\nTap the following button to go Meditate Tab, so that you can get started Directly\n</string>
+    <string name="ButtonStringForMeditateFragment">\nYou can go to Meditate Tab, so that you can get started Directly\n</string>
 
-    <string name="thirdString">So first of all, \nWhat is Peace of Mind?</string>
+    <string name="thirdString">What is Peace of Mind?</string>
+
+    <string name="AnswerString">A feeling of calm or not being worried.</string>
+
+    <string name="whyString">Why is peace of mind important?</string>
+    <string name="whyAnswer">Achieving peace of mind can lead to numerous physical, emotional, and mental benefits, including reduced stress, improved focus, enhanced emotional well-being, and increased resilience in the face of life\'s challenges.</string>
 </resources>

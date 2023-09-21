@@ -9,8 +9,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -74,35 +73,62 @@
                 android:textSize="20dp"
                 android:textAlignment="center"/>
 
-            <Button
-                android:id="@+id/meditate_btn"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+<!--            <Button-->
+<!--                android:id="@+id/meditate_btn"-->
+<!--                style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="#293621"-->
+<!--                android:backgroundTintMode="src_in"-->
+<!--                android:text="Meditate"-->
+<!--                android:textColor="@color/_light_green"-->
+<!--                app:iconTint="@color/alice_blue"-->
+<!--                app:strokeColor="@color/alice_blue" />-->
+
+
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#293621"
-                android:backgroundTintMode="src_in"
-                android:text="Meditate"
-                android:textColor="@color/_light_green"
-                app:iconTint="@color/alice_blue"
-                app:strokeColor="@color/alice_blue" />
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:text="@string/thirdString"
+                android:layout_marginBottom="10dp"/>
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calm"
+                android:layout_marginBottom="5dp"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="@string/AnswerString"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/advent_pro"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/thirdString"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/whyString"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:textSize="30dp"
+                android:fontFamily="@font/advent_pro_semibold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/advent_pro"
+                android:text="@string/whyAnswer"
+                android:textSize="25dp"/>
 
         </LinearLayout>
-
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/recyclerview_home"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/username_home" />-->
 
     </ScrollView>
 
