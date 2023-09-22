@@ -23,5 +23,20 @@
     <string name="AudioText2">Try this 3-part guided audio series :\n</string>
 
 <string name="AudioText3">How long would you like to meditate? Sometimes we only have time for a quick check-in, sometimes we can dip in a little longer. Meditating every day helps build awareness, fosters resilience, and lower stress. Try to make meditation a habit by practicing with these short meditations\n</string>
-    <string name="whyAnswer">Achieving peace of mind can lead to numerous physical, emotional, and mental benefits, including reduced stress, improved focus, enhanced emotional well-being, and increased resilience in the face of life\'s challenges.</string>
+    <string name="whyAnswer">Achieving peace of mind can lead to numerous physical, emotional, and mental benefits, including reduced stress, improved focus, enhanced emotional well-being, and increased resilience in the face of life\'s challenges.\n</string>
+    
+    <string name="MoreStyles">\nOnce you have explored a basic seated meditation practice, you might want to consider other forms of meditation including walking and lying down. Whereas the previous meditations used the breath as a focal point for practice, these meditations below focus on different parts of the body.\n</string>
+    <string name="BodyScanString">The point of this practice is to check in with your whole body: Fingertips to shoulders, butt to big toe. Only rules are: No judging, no wondering, no worrying (all activities your mind may want to do); just check in with the physical feeling of being in your body. Aches and pains are fine. You don’t have to do anything about anything here. You’re just noticing.</string>
+    <string name="WalkingString">Most of us live pretty sedentary lives, leaving us to build extra-curricular physical activity into our days to counteract all that. Point is: Mindfulness doesn’t have to feel like another thing on your to-do list. It can be injected into some of the activities you’re already doing. Here’s how to integrate a mindful walking practice into your day.</string>
+    <string name="Meditationstring"><b>Through Meditation:</b>\nMeditation is a practice that involves focusing your mind on a particular object, thought, or activity to train attention and awareness, ultimately promoting mental clarity and emotional calmness.\n
+<b>Benefits of Meditation:</b> \n<b>Meditation has been scientifically proven to:</b>\n
+Reduce stress and anxiety.\n
+Enhance emotional well-being and mood.\n
+Improve concentration and cognitive function.\n
+Foster a sense of inner peace and contentment.\n
+Boost self-awareness and self-compassion.</string>
+
+
+
+
 </resources>

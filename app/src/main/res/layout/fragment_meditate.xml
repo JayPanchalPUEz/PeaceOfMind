@@ -3,12 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/calm_dark_blue_sea_background_free_photo"
     tools:context=".Fragments.MeditateFragment">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingHorizontal="10dp">
+        android:foregroundGravity="center"
+        android:scrollbars="none"
+        >
 
 
         <LinearLayout
@@ -19,82 +23,290 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
                 android:fontFamily="@font/advent_pro_bold"
-                android:textAlignment="center"
                 android:text="“Quiet the mind and the soul will speak.”"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="– Ma Jaya Sati Bhagavati"
-                android:fontFamily="@font/advent_pro_semibold"
-                android:textAlignment="viewEnd"
-                android:textSize="15dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="So let's get started:"
-                android:textSize="20dp"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/advent_pro_light"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="You can click below picture to go to the website"
                 android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:text="– Ma Jaya Sati Bhagavati"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/alice_blue"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/advent_pro"
+                android:text="First see this Picture then get started:"
+                android:textAlignment="center"
+                android:textColor="@color/aquamarine"
                 android:textSize="25dp"
-                android:fontFamily="@font/advent_pro"/>
+                android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/ImageLink"
+                android:id="@+id/Image"
                 android:layout_width="match_parent"
                 android:layout_height="380dp"
                 android:src="@drawable/meditate_tab" />
 
-            <Button
-                android:id="@+id/YoutubeButton"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:text="@string/AudioText"
+                android:textAlignment="center"
+                android:textColor="@color/light_cyan"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:text="@string/AudioText2"
+                android:textAlignment="center"
+                android:textColor="@color/light_yellow"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro"
+                android:text="@string/AudioText3"
+                android:textAlignment="center"
+                android:textColor="@color/light_yellow"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:text="1-Minute Meditation"
+                android:textAlignment="center"
+                android:textColor="@color/light_salmon"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro"
+                android:text="A short practice for settling the mind, intended for doing in the middle of the day, wherever you are out in the world."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <SeekBar
+                android:id="@+id/firstSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:max="100"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Youtube"/>
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/firstAudioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"/>
+
+                <Button
+                    android:id="@+id/firstpauseBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Pause"/>
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/AudioText"
                 android:fontFamily="@font/advent_pro_semibold"
-                android:textSize="20dp"/>
+                android:text="10-Minute Meditation"
+                android:textAlignment="center"
+                android:textColor="@color/light_salmon"
+                android:textSize="25dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/AudioText2"
-                android:fontFamily="@font/advent_pro_semibold"
-                android:textSize="19dp"/>
-            <TextView
+                android:fontFamily="@font/advent_pro"
+                android:text="A longer practice that explores meditation posture, breathing techniques, and working with thoughts and emotions as they surface during mindfulness practice."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <SeekBar
+                android:id="@+id/secondSeekBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/AudioText3"
-                android:fontFamily="@font/advent_pro"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="1-Minute Meditation"
-                android:fontFamily="@font/advent_pro_semibold"
-                android:textSize="20dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="A short practice for settling the mind, intended for doing in the middle of the day, wherever you are out in the world."
-                android:fontFamily="@font/advent_pro"/>
-            <Button
-                android:id="@+id/firstAudioBtn"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:max="100"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Start Audio"/>
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/secondAudioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"/>
+
+                <Button
+                    android:id="@+id/secondpauseBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Pause"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:text="15-Minute Meditation"
+                android:textAlignment="center"
+                android:textColor="@color/light_salmon"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro"
+                android:text="A practice that explores sitting in formal meditation for longer periods of time."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <SeekBar
+                android:id="@+id/thirdSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:max="100"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/thirdAudioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"/>
+
+                <Button
+                    android:id="@+id/thirdpauseBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Pause"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:text="More Styles of Mindfulness Meditation"
+                android:textAlignment="center"
+                android:textColor="@color/light_goldenrod_yellow"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro"
+                android:text="@string/MoreStyles"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:text="\nBody Scan Meditation"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/advent_pro"
+                android:text="@string/BodyScanString"
+                android:textAlignment="center"
+                android:textColor="@color/lavender_blush"
+                android:textSize="20dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/green_circle"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/BodyScanLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click Here For The Video"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:text="\nWalking Meditation"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/advent_pro"
+                android:text="@string/WalkingString"
+                android:textAlignment="center"
+                android:textColor="@color/lavender_blush"
+                android:textSize="20dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/walking"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/WalkingLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click Here For The Video"/>
+
+
+
+
+
 
 
 
