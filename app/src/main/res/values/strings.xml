@@ -18,5 +18,10 @@
     <string name="AnswerString">A feeling of calm or not being worried.</string>
 
     <string name="whyString">Why is peace of mind important?</string>
+
+    <string name="AudioText"># Guided Meditations for Beginners:\n</string>
+    <string name="AudioText2">Try this 3-part guided audio series :\n</string>
+
+<string name="AudioText3">How long would you like to meditate? Sometimes we only have time for a quick check-in, sometimes we can dip in a little longer. Meditating every day helps build awareness, fosters resilience, and lower stress. Try to make meditation a habit by practicing with these short meditations\n</string>
     <string name="whyAnswer">Achieving peace of mind can lead to numerous physical, emotional, and mental benefits, including reduced stress, improved focus, enhanced emotional well-being, and increased resilience in the face of life\'s challenges.</string>
 </resources>

@@ -61,6 +61,42 @@
                 android:layout_gravity="center"
                 android:text="Youtube"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AudioText"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AudioText2"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:textSize="19dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AudioText3"
+                android:fontFamily="@font/advent_pro"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1-Minute Meditation"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A short practice for settling the mind, intended for doing in the middle of the day, wherever you are out in the world."
+                android:fontFamily="@font/advent_pro"/>
+            <Button
+                android:id="@+id/firstAudioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Audio"/>
+
+
 
         </LinearLayout>
 
