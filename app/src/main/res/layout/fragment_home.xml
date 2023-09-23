@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/desktop_wallpaper_light_abstract_light_blue_color_background_light_colour"
+    android:background="@color/black"
     tools:context=".Fragments.HomeFragment">
 
     <ScrollView
@@ -23,7 +23,7 @@
                 android:fontFamily="@font/advent_pro_bold"
                 android:text="HELLO!"
                 android:textAlignment="center"
-                android:textColor="@color/dark_blue"
+                android:textColor="@color/light_cyan"
                 android:textColorHighlight="@color/light_blue"
                 android:textSize="40dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
                 android:fontFamily="@font/advent_pro_light"
                 android:text="UserName"
                 android:textAlignment="center"
-                android:textColor="@color/blue"
+                android:textColor="@color/light_goldenrod_yellow"
                 android:textSize="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
@@ -67,7 +67,7 @@
                 android:fontFamily="@font/advent_pro"
                 android:text="@string/secondString"
                 android:textAlignment="center"
-                android:textColor="@color/dark_green"
+                android:textColor="@color/lavender"
                 android:textSize="20dp" />
 
             <TextView
@@ -77,7 +77,7 @@
                 android:fontFamily="@font/advent_pro"
                 android:text="@string/ButtonStringForMeditateFragment"
                 android:textAlignment="center"
-                android:textColor="@color/dark_blue"
+                android:textColor="@color/lavender_blush"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -101,7 +101,7 @@
                 android:fontFamily="@font/advent_pro_semibold"
                 android:text="@string/thirdString"
                 android:textAlignment="center"
-                android:textColor="@color/blue_violet"
+                android:textColor="@color/indian_red"
                 android:textSize="30dp" />
 
             <ImageView
@@ -117,7 +117,7 @@
                 android:fontFamily="@font/advent_pro"
                 android:text="@string/AnswerString"
                 android:textAlignment="center"
-                android:textColor="@color/dark_magenta"
+                android:textColor="@color/lavender_blush"
                 android:textSize="25dp" />
 
             <TextView
@@ -127,7 +127,7 @@
                 android:fontFamily="@font/advent_pro_semibold"
                 android:text="@string/whyString"
                 android:textAlignment="center"
-                android:textColor="@color/blue_violet"
+                android:textColor="@color/indian_red"
                 android:textSize="30dp" />
 
             <TextView
@@ -136,7 +136,7 @@
                 android:fontFamily="@font/advent_pro"
                 android:text="@string/whyAnswer"
                 android:textAlignment="center"
-                android:textColor="@color/dark_magenta"
+                android:textColor="@color/lavender_blush"
                 android:textSize="25dp" />
 
             <TextView
@@ -146,7 +146,7 @@
                 android:fontFamily="@font/advent_pro_semibold"
                 android:text="So How to Achieve Peace Of Mind?"
                 android:textAlignment="center"
-                android:textColor="@color/blue_violet"
+                android:textColor="@color/indian_red"
                 android:textSize="30dp" />
             <TextView
                 android:layout_width="match_parent"
@@ -154,7 +154,7 @@
                 android:fontFamily="@font/advent_pro"
                 android:text="@string/Meditationstring"
                 android:textAlignment="center"
-                android:textColor="@color/dark_green"
+                android:textColor="@color/lavender_blush"
                 android:textSize="20dp" />
 
         </LinearLayout>
